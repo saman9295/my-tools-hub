@@ -143,6 +143,50 @@
             <div class="result-box" id="eg-res" style="display:none;"><h3 id="eg-out" style="color:#1e3a8a;"></h3></div>
         </div>
     </div>
+    <!-- Tool 6: Campaign UTM Builder -->
+        <div id="utm-tool" class="tool-box">
+            <h2>🔗 Campaign UTM Builder</h2>
+            <div class="form-group"><label>Website URL</label><input type="text" id="utmUrl" placeholder="https://example.com"></div>
+            <div class="form-group"><label>Campaign Source</label><input type="text" id="utmSource" placeholder="google, newsletter"></div>
+            <div class="form-group"><label>Campaign Medium</label><input type="text" id="utmMedium" placeholder="cpc, banner, email"></div>
+            <div class="form-group"><label>Campaign Name</label><input type="text" id="utmName" placeholder="summer_sale"></div>
+            <button class="action-btn" onclick="generateUTM()">Generate Link</button>
+            <div class="result-box" id="utmResult" style="display:none;"><h3 id="utmOut" style="color:#1e3a8a;"></h3></div>
+        </div>
+
+        <!-- Tool 7: Marketing ROI Calculator -->
+        <div id="roi-tool" class="tool-box">
+            <h2>📈 Marketing ROI Calculator</h2>
+            <div class="form-group"><label>Total Campaign Cost ($)</label><input type="number" id="roiCost" value="1000"></div>
+            <div class="form-group"><label>Revenue Generated ($)</label><input type="number" id="roiRevenue" value="3500"></div>
+            <button class="action-btn" onclick="calculateROI()">Calculate ROI</button>
+            <div class="result-box" id="roiResult" style="display:none;"><h3 id="roiOut" style="color:#1e3a8a;"></h3></div>
+        </div>
+
+        <!-- Tool 8: Text Case Converter -->
+        <div id="case-tool" class="tool-box">
+            <h2>🔤 Text Case Converter</h2>
+            <div class="form-group"><textarea id="caseInput" rows="3" placeholder="Enter text to convert..."></textarea></div>
+            <button class="action-btn" onclick="convertCase('upper')">UPPERCASE</button>
+            <button class="action-btn" onclick="convertCase('lower')">lowercase</button>
+            <button class="action-btn" onclick="convertCase('title')">Title Case</button>
+        </div>
+
+        <!-- Tool 9: Reading Time Estimator -->
+        <div id="readtime-tool" class="tool-box">
+            <h2>⏱️ Reading Time Estimator</h2>
+            <div class="form-group"><textarea id="readTimeInput" rows="3" placeholder="Paste article content here..."></textarea></div>
+            <button class="action-btn" onclick="calcReadTime()">Estimate Time</button>
+            <div class="result-box" id="readTimeResult" style="display:none;"><h3 id="readTimeOut" style="color:#1e3a8a;"></h3></div>
+        </div>
+
+        <!-- Tool 10: Email Subject Line Tester -->
+        <div id="subject-tool" class="tool-box">
+            <h2>📧 Subject Line Tester</h2>
+            <div class="form-group"><input type="text" id="subjectInput" placeholder="Enter subject line..."></div>
+            <button class="action-btn" onclick="testSubject()">Analyze Subject</button>
+            <div class="result-box" id="subjectResult" style="display:none;"><h3 id="subjectOut" style="color:#1e3a8a;"></h3></div>
+        </div>
 
     <footer>
         <p>&copy; 2026 ProMarketer Tools Hub. Read our <a href="faqs.html" style="color:#cbd5e1;">30 FAQ Guides</a>.</p>
