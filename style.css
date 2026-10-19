@@ -302,3 +302,42 @@ footer {
         padding: 10px !important;
     }
 }
+/* Decorative Hover Effects for Cards & Buttons */
+
+/* Card Hover Animation */
+.tool-card, .blog-post, .tool-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.tool-card:hover, .blog-post:hover, .tool-box:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 20px rgba(30, 58, 138, 0.12) !important;
+}
+
+/* Button Hover Effects */
+.btn, .action-btn, .use-tool-btn {
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.btn:hover, .action-btn:hover, .use-tool-btn:hover {
+    background-color: #1d4ed8 !important; /* Slightly darker blue */
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3) !important;
+    transform: translateY(-2px) !important;
+}
+
+.btn:active, .action-btn:active, .use-tool-btn:active {
+    transform: translateY(0) !important;
+    box-shadow: none !important;
+}
+
+/* Input Focus Effects */
+input[type="text"], input[type="number"], textarea {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2) !important;
+    outline: none !important;
+}
