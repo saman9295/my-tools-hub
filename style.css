@@ -276,3 +276,29 @@ footer {
     font-size: 13px;
     margin-top: 40px;
 }
+/* Mobile Responsiveness Fix */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 10px !important;
+    }
+
+    nav {
+        margin-top: 10px !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px !important;
+    }
+
+    nav a {
+        margin: 0 5px !important;
+        font-size: 14px !important;
+    }
+
+    body {
+        padding: 10px !important;
+    }
+}
