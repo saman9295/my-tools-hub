@@ -9,6 +9,11 @@ body {
     background-color: #f0f4f8;
     color: #333;
     line-height: 1.6;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 /* Header & Navigation */
@@ -279,27 +284,42 @@ footer {
 /* Mobile Responsiveness Fix */
 @media (max-width: 768px) {
     header {
+        padding: 10px !important;
+        width: 100% !important;
+    }
+
+    .nav-container {
         flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
         padding: 10px !important;
+        width: 100% !important;
+    }
+
+    .logo {
+        font-size: 18px !important;
+        word-break: break-word !important;
+        text-align: center !important;
     }
 
     nav {
-        margin-top: 10px !important;
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
-        gap: 10px !important;
+        gap: 8px !important;
+        margin-top: 10px !important;
+        width: 100% !important;
     }
 
     nav a {
-        margin: 0 5px !important;
-        font-size: 14px !important;
+        font-size: 13px !important;
+        padding: 4px 8px !important;
     }
 
-    body {
-        padding: 10px !important;
+    .hero, .container, main, section, .tool-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 15px !important;
     }
 }
 /* Decorative Hover Effects for Cards & Buttons */
